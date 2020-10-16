@@ -1,0 +1,62 @@
+.partial-textgame {
+  height: 90px;
+  overflow: hidden;
+}
+.games-list {
+  justify-content: last baseline;
+}
+.game-availability {
+  right: 10px;
+  bottom: 5px;
+}
+.anim {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: myfirst 5s 2;
+}
+body {
+  background-image: url(/assets/images/iconplatf.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.text-write {
+  color: #4c5656 !important;
+}
+.d-none {
+  display: none !important;
+}
+
+element.style {
+  width: 250px;
+}
+.text-white {
+  color: #bd2130 !important;
+}
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+#customCard {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: rgb(23, 39, 37);
+  border-color: black;
+  color: rgb(228, 228, 172);
+  position: center;
+}
+h1 {
+  color: rgb(253, 255, 253);
+  size: 20ex;
+}

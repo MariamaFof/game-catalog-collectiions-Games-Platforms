@@ -1,0 +1,17 @@
+.partial-text {
+  height: 90px;
+  overflow: hidden;
+}
+.platforms-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* .partial-text {
+  height: 124px;
+  overflow: hidden;
+} */
+body {
+  background-image: url(/assets/images/icon3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

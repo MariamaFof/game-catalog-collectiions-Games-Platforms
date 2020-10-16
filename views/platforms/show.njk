@@ -3,11 +3,14 @@
 {% block title %}
   <title>GD: {{platform.name}}</title>
 {% endblock %}
-
 {% block content %}
+<div class="container">
   <h1>{{platform.name}}</h1>
+
   <img src="{{platform.platform_logo.url}}" alt="{{platform.name}}">
-  <ul>
+  <p>
+   available on
+
     {% for game in platform.games %}
       <li>
         {% if game.cover.url %}
@@ -18,5 +21,8 @@
         <h3><a href="/games/{{game.slug}}">{{game.name}}</a></h3>
       </li>
     {% endfor %}
-  </ul>
+
+    
+
 {% endblock %}
+</div>

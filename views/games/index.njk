@@ -1,20 +1,29 @@
-{% extends "layout/index.njk" %}
+ {% extends "layout/index.njk" %} {% block title %}
+<title>GD: Games </title>
 
-{% block title %}
-  <title>GD: Games</title>
-{% endblock %}
-
+{% endblock %} 
 {% block css %}
-{% endblock %}
-
+<link rel="stylesheet" href="/assets/styles/games.css" />
+{% endblock %} 
 {% block content %}
+
+<div class="container">
   <h1>Games</h1>
-  <ul>
+<div class="amin">
+  <div class="games-list d-flex justify-content-around flex-wrap">
     {% for game in games %}
-      <li>
-        <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
-        <h3><a href="/games/{{game.slug}}">{{game.name}}</a></h3>
-      </li>
+    <div id="customCard" class="mb-2 " style="width:250px">
+      <img src="{{ game.cover.thumbnail }}" class="card-img-top" alt="{{ game.name }}" />
+      <div class="card-body">
+        <h5 class="card-title d-none">{{ game.name }}</h5>
+        <p class="card-text partial-textgame d-none d-sm-block">{{ game.summary }}</p>
+        <a href="/games/{{game.slug}}" class="btn btn-secondary">Go somewhere</a>
+        {# <button type="button" class="btn btn-default">Default</button> #}
+      </div>
+    </div>
+
     {% endfor %}
-  </ul>
-{% endblock %}
+  </div>
+  {% endblock %}
+</div>
+
